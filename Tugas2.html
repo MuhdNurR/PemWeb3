@@ -17,20 +17,22 @@
             document.getElementById('hasil').value = angka1 * angka2;
         } else if (hitung == "/") {
             document.getElementById('hasil').value = angka1 / angka2;
-        } 
-    }    
+        }
+    }
     function resetForm() {
         document.calculator.reset();
     }        
 </script>
 
 <style type="text/css">
-    body{
-        background-color: gray; 
-    }   
-    #hasil{
-        background-color: rgba(107, 95, 95, 0.445);        
+    body {
+        background-color: gray;
     }
+
+    #hasil {
+        background-color: rgba(107, 95, 95, 0.445);
+    }
+
     input.tombol {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -40,19 +42,19 @@
         align-content: flex-start;
         cursor: pointer;
         background-color: whitesmoke;
-            border: 2px;
-            border-style: solid;        
+        border: 2px;
+        border-style: solid;
     }
 
     input.tombol:hover {
         opacity: 0.5;
     }
-    
-    form{
+
+    form {
         text-align: center;
         margin: 5cm;
         border: 10px;
-        padding: 30px;        
+        padding: 30px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: white;
     }
@@ -63,18 +65,18 @@
         <p>Bilangan 1 : <input type="text" id="Bil1" size="20"></p>
         <p>Bilangan 2 : <input type="text" id="Bil2" size="20"></p>
         <p>Hasil : <input type="text" id="hasil" size="20" readonly="readonly"></p>
-        Operasi    
+        Operasi
         <input class="tombol" type="button" onclick="test(this.value)" value="+" ;>
         <input class="tombol" type="button" onclick="test(this.value)" value="-" ;>
         <input class="tombol" type="button" onclick="test(this.value)" value="x" ;>
         <input class="tombol" type="button" onclick="test(this.value)" value="/" ;>
-        <br><br><input    style="cursor: pointer; border-radius: 15px; padding: 6px;" 
-        type="button" value="HAPUS" onClick="resetForm()"/>
+        <br><br><input style="cursor: pointer; border-radius: 15px; padding: 6px;" type="button" value="HAPUS"
+            onClick="resetForm()" />
         <br><br>
         <script language="JavaScript">
             document.write("Dimodifikasi terakhir pada " + document.lastModified);
         </script>
-    </form>    
+    </form>
 </body>
 
 </html>
